@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run Data Processing Tests
         run: |
-          cd src/data_processing
+          
           python src/data/run_processing.py   --input data/raw/house_data.csv   --output data/processed/cleaned_house_data.csv
       - name: Do feature Engineering
         run: |
