@@ -51,7 +51,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: marlesque/fastapi:{{ github.sha }}
+          tags: marlesque/fastapi:${{ github.sha::7 }}
           context: "."
           file: "Dockerfile"
           
